@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .btn {background-color: #579229;color: white;padding: 10px 14px;border: none;cursor: pointer;opacity: 0.9;}
+        .btn:hover {opacity: 1;}
+        .checked {color: orange}
+    </style>
+</head>
+<body style="border: 12px solid #579229; background-color: #f3f3f3">
+<div style="text-align: center; background-color: #f3f3f3">
+    <div style="padding: 10px 10px">
+        <img src="https://i.ibb.co/DQtS63x/logo2.png" height="90px" width="100px" alt="">
+        <h3 style="color: #579229" th:text="#{email.response_notification.title(${restaurant})}"></h3>
+        <div style="margin: 50px auto">
+            <p th:utext="#{email.response_notification.body1(${review})}"></p>
+            <p th:utext="#{email.response_notification.body2(${rating})}">
+                <span class="checked">&#9733;</span>
+            </p>
+            <p th:utext="#{email.response_notification.body3(${restaurant}, ${answer})}"></p>
+        </div>
+        <a th:href="${url}">
+            <button class="btn">
+                <b th:text="#{email.response_notification.button}"></b>
+            </button>
+        </a>
+        <hr style="margin: 20px 80px">
+        <p th:text="#{email.spoon_regards}"></p>
+    </div>
+</div>
+</body>
+</html>

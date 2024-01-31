@@ -1,0 +1,30 @@
+package ar.edu.itba.paw.webapp.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+@Profile("!dev")
+@Configuration
+public class ProdUrlConfig {
+
+    @Bean(name = "appHost")
+    public String appHost() {
+        return "pawserver.it.itba.edu.ar";
+    }
+
+    @Bean(name = "appProtocol")
+    public String appProtocol() {
+        return "http";
+    }
+
+    @Bean(name = "appWebContext")
+    public String appWebContext() {
+        return "/paw-2021b-7/";
+    }
+
+    @Bean(name = "appPort")
+    public int appPort() {
+        return 80;
+    }
+}

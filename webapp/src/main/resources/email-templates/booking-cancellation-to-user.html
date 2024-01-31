@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .btn {background-color: #579229;color: white;padding: 10px 14px;border: none;cursor: pointer;opacity: 0.9;}
+        .btn:hover {opacity: 1;}
+    </style>
+</head>
+<body> <div style="text-align: center; background-color: #f3f3f3"><div style="padding: 10px 10px"><img src="https://i.ibb.co/DQtS63x/logo2.png" height="90px" width="100px" alt=""><h3 style="color: red">El restaurante {0} ha cancelado su reserva</h3> <div style="margin: 50px auto"><p><b>Día:</b> {1}</p> <p><b>Hora:</b> {2}</p> <p><b>Personas: </b> {3}</p></div><p>Si deseas más información acerca del motivo o de posibles nuevas reservas. Por favor comunicate con el restaurant a su casilla de correo electrónico {4}</p><a href={5}><button class="btn"><b>Ir a mis reservas</b></button></a><hr style="margin: 20px 80px"><p>Atte, el equipo de Spoon.</p></div></div> </body>
+
+<body style="border: 12px solid #579229; background-color: #f3f3f3">
+<div style="text-align: center; background-color: #f3f3f3">
+    <div style="padding: 10px 10px">
+        <img src="https://i.ibb.co/DQtS63x/logo2.png" height="90px" width="100px" alt="">
+        <h3 style="color: red" th:text="#{email.booking_cancellation_to_user.title(${restaurant})}"></h3>
+        <div style="margin: 50px auto">
+            <p th:utext="#{email.booking_info.body1(${date})}"></p>
+            <p th:utext="#{email.booking_info.body2(${hour})}"></p>
+            <p th:utext="#{email.booking_info.body3(${diners})}"></p>
+        </div>
+        <p th:text="#{email.booking_cancellation_to_user.body(${restaurant_email})}"></p>
+        <a th:href="${url}">
+            <button class="btn">
+                <b th:text="#{email.booking_info.button}"></b>
+            </button>
+        </a>
+        <hr style="margin: 20px 80px">
+        <p th:text="#{email.spoon_regards}"></p>
+    </div>
+</div>
+</body>
+</html>

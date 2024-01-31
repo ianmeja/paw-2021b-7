@@ -1,0 +1,501 @@
+:root {
+  --color-primary: #579229;
+  --color-action: white;
+  --color-secondary: #256400;
+  --color-spoon-black: #06121a;
+  --color-light: #afdc8c;
+  --color-spoon-red: #ff6b4d;
+  --color-grey: #eaedea;
+  --color-danger: red;
+  --color-white: white;
+  --color-light-grey: #f6f6f6;
+  --color-dark-grey: #a0a0a0;
+  --color-cream: #f8f8f2;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--color-spoon-black);
+}
+
+img {
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin: 1rem 0.5rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.image p {
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+.error {
+  color: var(--color-danger) !important;
+  margin: 3px 0;
+}
+
+a.nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+.nav-link{
+  padding: -2.5rem 1rem;
+  color: var(--color-primary);
+}
+
+
+.nav-tabs .nav-link {
+  color: var(--color-primary);
+}
+
+.table {
+  color: var(--color-primary)
+}
+
+.date {
+  font-size: 0.85rem !important;
+  opacity: 85%;
+}
+
+i.overflow-icon:hover {
+  color: var(--color-secondary) !important;
+}
+
+.color-primary {
+  color: var(--color-primary) !important;
+}
+
+.bg-color-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-color-cream {
+  background-color: var(--color-cream) !important;
+}
+
+.color-action {
+  color: var(--color-action) !important;
+}
+
+.bg-color-action {
+  background-color: var(--color-action) !important;
+}
+
+.color-danger {
+  color: var(--color-danger) !important;
+}
+
+.bg-color-danger {
+  background-color: var(--color-danger) !important;
+}
+
+.color-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.bg-color-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.color-spoon-black {
+  color: var(--color-spoon-black) !important;
+}
+
+.bg-color-spoon-black {
+  background-color: var(--color-spoon-black) !important;
+}
+
+.color-spoon-red {
+  color: var(--color-spoon-red) !important;
+}
+
+.bg-color-spoon-red {
+  background-color: var(--color-spoon-red) !important;
+}
+
+.color-grey {
+  color: var(--color-grey) !important;
+}
+
+.bg-color-grey {
+  background-color: var(--color-grey) !important;
+}
+
+.color-white {
+  color: var(--color-white) !important;
+}
+
+.bg-color-white {
+  background-color: var(--color-white) !important;
+}
+
+.color-spoon-light {
+  color: var(--color-light) !important;
+}
+
+.bg-color-spoon-light {
+  background-color: var(--color-light) !important;
+}
+
+.nav-bar-style {
+  align-items: center;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+}
+
+.container-height {
+  min-height: 85vh;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.main-margins {
+  margin: 0 15%;
+}
+
+.landing-margins {
+  margin: 0 10%;
+}
+
+.card-style {
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin: 0 0 8px;
+  width: 100%;
+
+}
+
+a.request-pill.active {
+  background-color: var(--color-action);
+}
+
+.landing-title-container {
+  background-color: var(--color-white);
+  min-height: 40vh;
+  padding: 10px;
+  margin: 0 0 5px;
+}
+
+.landing-category-container {
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.label-check > label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.category-card-list {
+  margin: 0 auto;
+}
+
+.card-style.filters-card {
+  height: auto;
+  margin: 0;
+}
+
+.filter-container {
+  height: 25px;
+}
+
+.form-container {
+  margin: 0 5%;
+}
+
+.form-container > * {
+  margin: 3% 0;
+}
+
+.footer-style {
+  height: 230px;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer-image-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.profile-articles {
+  min-height: 250px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.my-requests-card {
+  min-height: 200px;
+  border: 1px solid var(--color-dark-grey);
+  background-color: var(--color-light-grey);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-link.request-pill[aria-selected='true'] {
+  background-color: var(--color-secondary) !important;
+}
+
+.restaurant-card-style {
+  padding: 7px;
+  height: 470px;
+  width: 100%;
+  margin: 0 0;
+  box-shadow: 0 0.125rem 0.25rem rgba($black, 0.075);
+}
+
+.restaurant-card-style:hover {
+  box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+}
+
+.restaurant-card-info-container {
+  margin-top: 3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 200px;
+}
+
+.restaurant-card-img-container {
+  display: flex;
+  justify-content: center;
+  height: 260px;
+}
+
+.restaurant-card-img-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.category-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  column-gap: 1%;
+  row-gap: 1em;
+}
+
+@media screen and (max-width: 1500px) {
+  .category-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .category-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  }
+}
+
+h3.request-card-title {
+  color: var(--color-action);
+}
+
+h3.request-card-title:hover {
+  color: var(--color-secondary);
+}
+
+.request-pill:hover {
+  background-color: var(--color-grey);
+}
+
+.nav-bar-link:hover {
+  color: var(--color-secondary);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.category-card {
+  box-shadow: 0 0.125rem 0.25rem rgba($black, 0.075);
+}
+
+.category-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+}
+
+.row-navbar {
+  margin-left: calc(-5.8 * var(--bs-gutter-x));
+}
+
+.row {
+  --bs-gutter-x: 0.5rem !important;
+}
+
+.address-text{
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.375;
+}
+
+.table thead {
+  background-color: var(--color-grey);
+}
+
+.table thead th {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.375;
+  background-color: var(--color-grey);
+}
+
+.dish-titles {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.375;
+  background-color: var(--color-grey) !important;
+}
+
+
+//register
+
+.choice-title{
+  margin-top: 2%;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.card-title{
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.card-text{
+  text-decoration: none;
+}
+
+
+.choice-card{
+  width: 18rem;
+  transition: transform 500ms;
+  cursor: pointer;
+}
+
+.choice-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+a:hover{
+  color: black;
+  font-size: 1.05em;
+  text-decoration: none;
+}
+
+.choice-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin:3%;
+}
+
+.card-header {
+  background-color: rgba(87,146,41,0.7);
+  padding: 10px 0;
+}
+
+.review_text{
+  margin: 0;
+  color: hsl(220, 9%, 26%);
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.3846153846153846;
+  font-size: 1rem;
+}
+
+.pagination > li > a
+{
+  background-color: white;
+  color: #579229;
+}
+
+.pagination > .active > a
+{
+  color: white;
+  background-color: #579229 !Important;
+  border: solid 1px #579229 !Important;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #579229;
+  border-color: #579229;
+}

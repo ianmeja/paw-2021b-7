@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.3.0",
+    "react-share": "^4.4.0",
+    "react-share-social": "^0.1.48",
+    "react-social-sharing": "^3.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.52.2"
+  }
+}

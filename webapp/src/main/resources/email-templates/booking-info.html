@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .btn {background-color: #579229;color: white;padding: 10px 14px;border: none;cursor: pointer;opacity: 0.9;}
+        .btn:hover {opacity: 1;}
+    </style>
+</head>
+<body style="border: 12px solid #579229; background-color: #f3f3f3">
+<div style="text-align: center; background-color: #f3f3f3">
+    <div style="padding: 10px 10px">
+        <img src="https://i.ibb.co/DQtS63x/logo2.png" height="90px" width="100px" alt="">
+        <h3 style="color: #579229" th:text="#{email.booking_info.title(${restaurant})}"></h3>
+        <div style="margin: 50px auto">
+            <p th:utext="#{email.booking_info.body1(${date})}"></p>
+            <p th:utext="#{email.booking_info.body2(${hour})}"></p>
+            <p th:utext="#{email.booking_info.body3(${diners})}"></p>
+        </div>
+        <p th:text="#{email.booking_info.body4}"></p>
+        <a th:href="${url}">
+            <button class="btn">
+                <b th:text="#{email.booking_info.button}"></b>
+            </button>
+        </a>
+        <hr style="margin: 20px 80px">
+        <p th:text="#{email.spoon_regards}"></p>
+    </div>
+</div>
+</body>
+</html>
